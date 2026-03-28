@@ -4,7 +4,7 @@ This project focuses on the data track for Code Quantum 2026. The idea for this 
 The project that I created uses a database provided by the Code Quantum resources based around the theme of F1 drivers. The approach I took for this hackathon was machine learning approach using a Random Forest Classifier to determine what actually constitutes an "outperformance" in a race. It analyzes four key features: Pace Delta, Grid Position, Lap Standard Deviation and Average Lap Time. The core of the project is the Machine Learning Driver Score. Instead of arbitrarily picking weights for these stats, the program: Trains a model to predict if a driver will "outperform" based on historical race data. Extracts the Feature Importance (the weights the AI assigned to each stat). Calculates a final score using the formula:
 
 $$
-\text{ML_Score} = \sum_{i=1}^{n} (f_i \cdot w_i \cdot 1)
+\text{ML}_{\text{score}} = \sum_{i=1}^{n} (f_i \cdot w_i \cdot 1)
 $$
 
 Where:
